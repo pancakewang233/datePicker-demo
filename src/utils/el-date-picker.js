@@ -106,7 +106,7 @@ const dataPicker = Vue.directive("dateFormat", {
         let drr = key.split(".");
         let key1 = drr[0];
         let key2 = drr[1];
-        drr.length === 1 ? (_this[key] = time) : (_this[key1][key2] = time);
+        drr.length === 1 ? (_this[key1] = time) : (_this[key1][key2] = time);
       } else {
         if (!_obj) {
           // 处理简单的绑定
