@@ -1,24 +1,3 @@
-# vue-test
+# el-date-picker
+# element 日期组件二次封装，利用vue自定义指令，实现输入自定义格式自动转日期
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
