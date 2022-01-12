@@ -1,18 +1,26 @@
 <template>
   <div id="app">
-    <Date />
+    <Date :temp="temp" />
   </div>
 </template>
 
 <script>
-import Date from './components/date.vue'
+import Date from "./components/date.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Date
-  }
-}
+    Date,
+  },
+  data() {
+    return {
+      temp: {
+        birth: "",
+        holiday: "",
+      },
+    };
+  },
+};
 </script>
 
 <style>
