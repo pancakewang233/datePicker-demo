@@ -47,6 +47,7 @@ const dataPicker = Vue.directive("dateFormat", {
         "：",
         "；",
         ";",
+        " "
       ];
       let numberList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
       let canTyped;
@@ -60,7 +61,7 @@ const dataPicker = Vue.directive("dateFormat", {
         }
       }
 
-      // 不会正则，简单粗暴filter去掉特殊符号
+      // 简单粗暴filter去掉特殊符号
       if (canTyped) {
         let obk = brr.filter((item) => item in numberList).join("");
         replaceTime(obk);
